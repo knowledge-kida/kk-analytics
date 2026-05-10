@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: raw
+    catalog: workspace
+    schema: default
+
+    tables:
+      - name: customers_raw
+      - name: orders_raw
+      - name: products_raw
+
+  - name: L0
+    catalog: workspace
+    schema: L0
+
+  - name: L1
+    catalog: workspace
+    schema: L1
+
+  - name: L2
+    catalog: workspace
+    schema: L2
