@@ -10,14 +10,3 @@ sources:
       - name: orders_raw
       - name: products_raw
 
-  - name: L0
-    catalog: workspace
-    schema: L0
-
-  - name: L1
-    catalog: workspace
-    schema: L1
-
-  - name: L2
-    catalog: workspace
-    schema: L2
