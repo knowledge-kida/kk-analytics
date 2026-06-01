@@ -4,5 +4,6 @@ SELECT
     email,
     city,
     CAST(signup_date AS DATE) AS signup_date
-FROM {{ source('raw', 'customers_raw') }}
+--FROM {{ source('raw', 'customers_raw') }}
+FROM {{ ref('customers_raw') }}
 WHERE email LIKE '%@%.%'

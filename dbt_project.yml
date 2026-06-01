@@ -37,7 +37,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   my_new_project:
-    +catalog: workspace   # important
+    #+catalog: workspace   # important
 
     L0:
       +schema: l0
@@ -50,3 +50,9 @@ models:
     L2:
       +schema: l2
       +materialized: table
+
+
+seeds:
+  my_new_project:
+    +schema: seed_data
+    

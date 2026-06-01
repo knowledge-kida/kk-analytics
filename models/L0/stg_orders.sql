@@ -4,4 +4,5 @@ SELECT
     CAST(product_id AS INT) AS product_id,
     CAST(quantity AS INT) AS quantity,
     CAST(order_date AS DATE) AS order_date
-FROM {{ source('raw', 'orders_raw') }}
+--FROM {{ source('raw', 'orders_raw') }}
+FROM {{ ref('orders_raw') }}
